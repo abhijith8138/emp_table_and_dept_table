@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display _ topic</h1>
+        <table border="3px" width="5px" height="5px">
+            <tr>
+                <th>EMPNO</th>
+                <th>ENAME</th>
+                <th>JOB</th>
+                <th>MGR</th>
+                <th>HIREDATE</th>
+                <th>SAL</th>
+                <th>COMM</th>
+                <th>DEPTNO</th>
+            </tr>
+            {% for eo in emp %}
+            <tr>
+                <td>{{eo.Empno}}</td>
+                <td>{{ eo.Ename}}</td>
+                <td>{{ eo.Job}}</td>
+                <td>{{ eo.Mgr}}</td>
+                <td>{{ eo.Hiredate}}</td>
+                <td>{{ eo.Sal}}</td>
+                <td>{{ eo.Comm}}</td>
+                <td>{{ eo.Dept_no}}</td>
+            </tr>
+            {% endfor %}
+           
+        </table>
+    </center>
+    
+</body>
+</html>
